@@ -20,6 +20,7 @@ const New: FC<ActionProps> = (props) => {
     submit: handleSubmit,
     loading,
     setRecord,
+    progress
   } = useRecord(initialRecord, resource.id)
   const { translateButton } = useTranslation()
   const history = useHistory()
@@ -80,6 +81,7 @@ const New: FC<ActionProps> = (props) => {
           {loading ? (<Icon icon="Fade" spin />) : null}
           {translateButton('save', resource.id)}
         </Button>
+        <h2>PROGRESS: {progress}</h2>
       </DrawerFooter>
     </Box>
   )
