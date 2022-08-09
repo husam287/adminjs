@@ -10,7 +10,6 @@ const SidebarFooter: React.FC = () => {
 
   return (
     <Box mt="lg" mb="md">
-      {branding.withMadeWithLove && <MadeWithLove />}
     </Box>
   )
 }
